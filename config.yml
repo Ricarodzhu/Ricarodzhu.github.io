@@ -1,0 +1,102 @@
+# Site settings
+title Hux Blog
+SEOTitle B·C·GOLF  made in china
+header-img httpss.mj.runzOsRiI3mX5s
+email 1158767894@qq.com
+description 这里是 B·C·GOLF，HOLLOW WORLD  
+keyword B·C·GOLF, B·C·GOLF, B·C·GOLF, B·C·GOLF,B·C·GOLF, @huxpro, B·C·GOLF, Hux Blog, 动态, 个人网站, 互联网, Web, JavaScript, React, React Native, 前端, 设计
+url httpshuangxuan.me # your host, for absolute URL
+baseurl  # for example, 'blog' if your blog hosted on 'hostblog'
+
+# Publish posts or collection documents with a future date.
+future true
+
+# SNS settings
+RSS false
+weibo_username B·C·GOLF
+zhihu_username B·C·GOLF
+github_username B·C·GOLF
+twitter_username B·C·GOLF
+#facebook_username  B·C·GOLF
+#linkedin_username  firstname-lastname-idxxxx
+
+# Build settings
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+highlighter rouge
+permalink pretty
+paginate 10
+exclude
+  [
+    less,
+    node_modules,
+    Gruntfile.js,
+    package.json,
+    README.md,
+    README.zh.md,
+  ]
+anchorjs true # if you want to customize anchor. check out line181 of `post.html`
+# If you have timezone issue (e.g. #68) in China, uncomment to use this
+#timezone CN
+
+# Gems
+# from PR#40, to support local preview for Jekyll 3.0
+# make sure you have this gem installed
+# `$ gem install jekyll-paginate`
+plugins [jekyll-paginate]
+
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document httpjekyllrb.comdocsconfiguration#kramdown
+markdown kramdown
+kramdown
+  input GFM # use Github Flavored Markdown !important
+  syntax_highlighter_opts
+    span
+      line_numbers false
+    block
+      line_numbers true
+      start_line 1
+
+# Disqus settings
+disqus_username hux
+
+# Netease settings
+netease_comment false
+
+# Analytics settings
+# Baidu Analytics
+# ba_track_id [your track id]
+
+# Google Analytics
+ga_track_id UA-49627206-1 # Format UA-xxxxxx-xx
+ga_domain huangxuan.me
+
+# Sidebar settings
+sidebar true # whether or not using Sidebar.
+sidebar-about-description 要做一个产品研发 br React Team @ Meta
+sidebar-avatar httpsgithub.comHuxpro.png # use absolute URL, seeing it's used in both `` and `about`
+
+# Featured Tags
+featured-tags true # whether or not using Feature-Tags
+featured-condition-size 1 # A tag will be featured if the size of it is more than this condition value
+
+# Progressive Web Apps
+chrome-tab-theme-color #000000
+service-worker true
+
+# MathJax rendering for layoutpage (e.g. post preview)
+page-mathjax false
+
+# Friends
+friends
+  [
+    { title 乱序（Midare）, href httpmida.re },
+    { title Ebn Zhang, href httpsebnbin.dev },
+    { title Kun Qian, href httpkunq.me },
+    { title Sherry Woo, href httpssherrywoo.me },
+    { title SmdCn, href httpblog.smdcn.net },
+    { title JiyinYiyong, href httptiye.me },
+    { title DHong Say, href httpdhong.co },
+    { title 尹峰以为, href httpingf.github.io },
+  ]
